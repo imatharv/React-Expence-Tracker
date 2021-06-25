@@ -5,7 +5,6 @@ function moneyFormatter(num) {
   console.log(num);
   let p = num.toFixed(2).split(".");
   return (
-    "₹ " +
     p[0]
       .split("")
       .reverse()
@@ -34,7 +33,7 @@ export default function IncomeExpensesComponent() {
       <div>
         <h4>Income</h4>
         <p id="money-plus" className="money plus">
-          {income}
+          {moneyFormatter(income)}
         </p>
       </div>
       <div>
