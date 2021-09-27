@@ -44,7 +44,11 @@ export default function AddTransactionComponent() {
             placeholder="Enter amount..."
           />
         </div>
-        <button className="btn">Add Transaction</button>
+        <div>
+          <button className="btn">
+            <span className="">Add Transaction</span>
+          </button>
+        </div>
       </form>
     </React.Fragment>
   );

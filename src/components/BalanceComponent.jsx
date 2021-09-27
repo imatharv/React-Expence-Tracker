@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
 
 function moneyFormatter(num) {
-  console.log(num);
   let p = num.toFixed(2).split(".");
   return (
     p[0]
@@ -23,7 +22,7 @@ export default function BalanceComponent() {
 
   return (
     <>
-      <h4>Your Balance</h4>
+      <h4 className="app-subtitle gradient-text">Your Balance</h4>
       <h1 id="balance">{moneyFormatter(total)}</h1>
     </>
   );

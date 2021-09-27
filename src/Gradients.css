@@ -1,0 +1,29 @@
+body {
+  background: rgb(75, 188, 204);
+  background: linear-gradient(
+    140deg,
+    rgba(75, 188, 204, 1) 0%,
+    rgba(91, 121, 231, 1) 100%
+  );
+  /* --------------------------- */
+  background: rgb(115, 187, 215);
+  background: linear-gradient(
+    140deg,
+    rgba(115, 187, 215, 1) 0%,
+    rgba(144, 121, 190, 1) 100%
+  );
+  /* --------------------------- */
+  background: rgb(67, 206, 228);
+  background: linear-gradient(
+    150deg,
+    rgba(67, 206, 228, 1) 0%,
+    rgb(24, 79, 197) 100%
+  );
+  /* --------------------------- */
+  background: rgb(199, 162, 178);
+  background: linear-gradient(
+    145deg,
+    rgba(199, 162, 178, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
