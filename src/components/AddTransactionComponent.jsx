@@ -1,9 +1,9 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { GlobalContext } from "../context/GlobalState";
 
 export default function AddTransactionComponent() {
   const [text, setText] = useState("");
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState();
 
   const { addTransaction } = useContext(GlobalContext);
 
@@ -17,6 +17,8 @@ export default function AddTransactionComponent() {
     };
 
     addTransaction(newTransaction);
+    setText("");
+    setAmount("");
   };
 
   return (
@@ -30,6 +32,7 @@ export default function AddTransactionComponent() {
             value={text}
             onChange={(e) => setText(e.target.value)}
             placeholder="Enter text..."
+            required
           />
         </div>
         <div className="form-control">
@@ -42,6 +45,7 @@ export default function AddTransactionComponent() {
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
             placeholder="Enter amount..."
+            required
           />
         </div>
         <div>
